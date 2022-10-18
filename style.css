@@ -1,5 +1,5 @@
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
   }
@@ -17,6 +17,7 @@ body {
     text-align: center;
     background-color: transparent;
     color: black;
+    border-radius: 0;
     border-bottom: 10px solid black;
   }
   
@@ -36,8 +37,8 @@ body {
   }
   
   .hour {
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: #000000;
     border-top: 1px dashed #000000;
   }
   
@@ -47,68 +48,25 @@ body {
   }
   
   .present {
-    background-color: #d287c8;
+    background-color: #ff6961;
     color: white;
   }
   
   .future {
-    background-color: lightgray;
-    color: rgb(0, 0, 0);
+    background-color: #77dd77;
+    color: white;
   }
   
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: #3ebcd3
+    background-color: #06aed5;
     color: white;
   }
-     /* background: linear-gradient(
-      90deg,
-      rgb(104, 165, 144) 0%,
-      rgb(73, 88, 127) 100% );
-
-    background: -moz-linear-gradient(
-      90deg,
-     rgb(30, 85, 118) 0%,
-      rgb(76, 68, 188) 100% 
-     ); 
-  
-    background: -webkit-linear-gradient(
-      90deg,
-      rgb(41, 43, 159) 0%,
-      rgb(75, 160, 120) 100%
-    );  */
-    
-
   
   .saveBtn i:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
   }
   
-  .hide {
-    display: none;
-  }
-  
-  
-  /* will be applied on any screen 768px and lower */
-  @media screen and (max-width: 768px), screen and (max-width: 575px) {
-    .row {
-      height: auto;
-      margin-top: 20px;
-    }
-    .saveBtn {
-      border: 0;
-      border-radius: 0.25rem;
-      height: 50px;
-    }
-  
-    .hour {
-      padding-right: 17%;
-    }
-    input {
-      min-height: 85px;
-      border: 17px;
-    }
-  }
