@@ -1,0 +1,87 @@
+textarea {
+    /* background: transparent; */
+    border: none;
+    /* resize: none; */
+    color: #000000;
+    border-left: 1px solid black;
+    padding: 10px;
+  }
+
+  .description {
+    white-space: pre-wrap;
+  }
+  .time-block {
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .row {
+    display:flex;
+    flex-direction: row
+    white-space: pre-wrap;
+    height: 80px;
+    border-top: 1px solid white;
+  }
+  .hour {
+    background-color:white;
+    color:lightblue;
+    border-top: 1px dashed #000000;
+  }
+  
+  .past {
+    background-color: lightgray;
+    color: white;
+  }
+  
+  .present {
+    background-color: red;
+    color: white;
+  }
+  
+  .future {
+    background-color: greenyellow;
+    color: black;
+  }
+  
+  .saveBtn {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: blue;
+  
+   
+    color: white;
+  }
+  
+  .saveBtn i:hover {
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  
+   /* will be applied on any screen 768px and lower */
+  @media screen and (max-width: 768px), screen and (max-width: 575px) {
+    .row {
+      height: auto;
+      margin-top: 20px;
+    }
+    .saveBtn {
+      border: 0;
+      border-radius: 0.25rem;
+      height: 50px;
+    }
+  
+    .hour {
+      padding-right: 17%;
+    }
+    textarea {
+      min-height: 85px;
+      border: 0;
+    }
+  } 
