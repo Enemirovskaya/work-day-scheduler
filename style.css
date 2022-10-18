@@ -1,59 +1,86 @@
-textarea {
-    /* background: transparent; */
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  
+  input {
+    background: transparent;
     border: none;
-    /* resize: none; */
+    resize: none;
     color: #000000;
     border-left: 1px solid black;
     padding: 10px;
   }
-
+  
+  .jumbotron {
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    border-bottom: 10px solid black;
+  }
+  
   .description {
     white-space: pre-wrap;
   }
+  
   .time-block {
-    display:flex;
-    width: 100%;
-    flex-direction: row;
     text-align: center;
     border-radius: 15px;
   }
+  
   .row {
-    display:flex;
-    flex-direction: row
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;
   }
+  
   .hour {
-    background-color:white;
-    color:lightblue;
+    background-color: white;
+    color: black;
     border-top: 1px dashed #000000;
   }
   
   .past {
-    background-color: lightgray;
+    background-color: #d3d3d3;
     color: white;
   }
   
   .present {
-    background-color: red;
+    background-color: #d287c8;
     color: white;
   }
   
   .future {
-    background-color: greenyellow;
-    color: black;
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
   }
   
   .saveBtn {
     border-left: 1px solid black;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: blue;
-  
-   
+    background: #3ebcd3
     color: white;
   }
+     /* background: linear-gradient(
+      90deg,
+      rgb(104, 165, 144) 0%,
+      rgb(73, 88, 127) 100% );
+
+    background: -moz-linear-gradient(
+      90deg,
+     rgb(30, 85, 118) 0%,
+      rgb(76, 68, 188) 100% 
+     ); 
+  
+    background: -webkit-linear-gradient(
+      90deg,
+      rgb(41, 43, 159) 0%,
+      rgb(75, 160, 120) 100%
+    );  */
+    
+
   
   .saveBtn i:hover {
     font-size: 20px;
@@ -65,7 +92,7 @@ textarea {
   }
   
   
-   /* will be applied on any screen 768px and lower */
+  /* will be applied on any screen 768px and lower */
   @media screen and (max-width: 768px), screen and (max-width: 575px) {
     .row {
       height: auto;
@@ -80,8 +107,8 @@ textarea {
     .hour {
       padding-right: 17%;
     }
-    textarea {
+    input {
       min-height: 85px;
-      border: 0;
+      border: 17px;
     }
-  } 
+  }
