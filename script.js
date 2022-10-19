@@ -25,13 +25,18 @@ $(document).ready(function () {
     $(".time-block").each(function () {
       var blockHour = parseInt($(this).attr("id").split("-")[1]);
 
+      
+      
       // To check the time and add the classes for background indicators
       if (blockHour < timeNow) {
         $(this).addClass("past");
-      } else if (blockHour === timeNow) {
+        console.log(timeNow)
+      }
+       else if (blockHour === timeNow) {
         $(this).removeClass("past");
         $(this).addClass("present");
-      } else {
+      }
+       else {
         $(this).removeClass("past");
         $(this).removeClass("present");
         $(this).addClass("future");
